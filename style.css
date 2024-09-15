@@ -80,6 +80,7 @@ header{
 .primary-menu i{
   font-size: 40px;
   text-align: left;
+  margin-left: 7px;
  
 }
 /*Css codin start......Banner.............*/
@@ -269,11 +270,6 @@ header{
 }
 
 
-.plan-top:hover{
-  background: #6278DF;
-  color: #fff;
-}
-
 
 
 
@@ -311,10 +307,17 @@ header{
   box-shadow: 1px 1px 8px 5px #EDEFF9;
 }
 
-.btn-p:hover{
+
+.p-hvr:hover .plan-top{
   background: #6278DF;
   color: #fff;
 }
+
+.p-hvr:hover .btn-p{
+  background: #6278DF;
+  color: #fff;
+}
+
 
 
 
@@ -389,7 +392,7 @@ text-align: left;
 input:focus {
   outline: none;
   border: 1px solid #6278DF;
-  box-shadow: 0 4px 8px #6278DF;
+  box-shadow: 3px 4px 30px 0 □rgba(98,120,223,.);
   border-radius: 5px;
 }
 .subscribe button{
@@ -404,9 +407,9 @@ input:focus {
 .subscribe button:hover{
   background: #ffffff;
   border-radius: 10px;
-  border: 1px solid #6278DF;
+  border: 2px solid #6278DF;
   color: #6278DF;
-  box-shadow: 4px 4px 8px 0px #6278DF;
+  box-shadow: 3px 4px 30px 0 rgba(98,120,223,.5);
 }
 
 .what{
@@ -494,7 +497,21 @@ input:focus {
   font-weight: 300;
   color: #767676;
   padding: 30px 5px;
+  position: relative;
 }
+
+.shape-com::before{
+  content: "\f10d";
+  font-family: FontAwesome;
+  font-size: 80px;
+  position: absolute;
+  opacity: .1;
+  left: 22px;
+  top: 24px;
+}
+
+
+
 .pp{
   margin: 20px 0;
 }
@@ -524,4 +541,82 @@ input:focus {
   text-align: left;
   padding-left: 20px;
 }
+
+.map{
+  margin: 10px 5px;
+  text-align: center;
+  padding: 10px;
+}
+
+.contact-form{
+  padding: 15px;
   
+}
+.contact-form h3{
+  padding: 22px 5px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.contact-form p{
+  font-size: 20px;
+  font-weight: 300;
+  color: #767676;
+  line-height: 1.5rem;
+  padding-bottom: 10px;
+}
+
+.contact-form input, .hh{
+  display: block;
+  margin: 10px auto;
+  padding: 15px 10px;
+  border: 1px solid rgba(118, 118, 118, .2);
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.contact-form input:focus{
+  border: 1px solid #6278DF;
+  border-radius: 5px;
+  box-shadow: 3px 4px 20px 0 rgba(98, 120, 223, .4)
+   }
+   textarea{
+     outline: none;
+     width: 280px;
+     height: 200px;
+     border: 1px solid transparent;
+   }
+   textarea:focus{
+     border: 1px solid #6278DF;
+  border-radius: 5px;
+  box-shadow: 3px 4px 20px 0 rgba(98, 120, 223, .4);
+   }
+   
+   .s-btn{
+     font-size: 25px;
+  padding: 15px 30px;
+  background: #6278DF;
+  color: #fff;
+  margin: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+   }
+   .s-btn:hover{
+     background: #ffffff;
+  border-radius: 10px;
+  border: 2px solid #6278DF;
+  color: #6278DF;
+  box-shadow: 3px 4px 20px 0 rgba(98, 120, 223, .4);
+   }
+   
+   
+   .footer{
+     padding: 30px;
+     text-align: center;
+   }
+   .footer span{
+     font-size: 18px;
+     font-weight: 400;
+     line-height: 1.5rem;
+   }
